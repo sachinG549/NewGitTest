@@ -65,3 +65,9 @@ getWeather('London');
 
 **Ticket:** ENG-123  
 **Status:** Implementation complete
+
+### Rate Limiting
+- 100 requests per minute per IP
+- 429 status code when limit exceeded
+- Rate limit headers in response: `X-RateLimit-Remaining`
+
